@@ -3,7 +3,7 @@ import os
 import pickle
 st.title("Diabetes Prediction with ML")
 working_dir=os.path.dirname(os.path.abspath(__file__))
-diabetes_model=pickle.load(open(f'{working_dir}/diabetes_model.sav'))
+diabetes_model=pickle.load(open(f'{working_dir}/diabetes_model.sav','rb'))
 gender=st.text_input("Enter Gender")
 age=st.text_input("Enter Age ")
 hp=st.text_input("Enter hypertension")
